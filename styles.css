@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Creato Display';
-  src: url('assets/CreatoDisplay-Regular.otf') format('opentype');
+  src: url('CreatoDisplay-Regular.otf') format('opentype');
   font-weight: 400;
   font-display: swap;
 }
@@ -185,7 +185,7 @@ h1, h2, .discord-panel h2 { font-family: 'Fredoka', 'Baloo 2', sans-serif; }
 button, input, select, textarea { font-family: inherit; }
 
 .hero-art .brand-eye {
-  background: url('assets/eye.png') center / contain no-repeat;
+  background: url('eye.png') center / contain no-repeat;
   width: clamp(85px, 13vw, 185px);
   height: auto;
   aspect-ratio: 261 / 219;
@@ -198,7 +198,7 @@ button, input, select, textarea { font-family: inherit; }
   width: clamp(145px, 26vw, 365px);
   height: auto;
   aspect-ratio: 610 / 571;
-  background: url('assets/tentacle.png') center / contain no-repeat;
+  background: url('tentacle.png') center / contain no-repeat;
   border: 0;
   left: auto;
   right: -7%;
@@ -208,7 +208,7 @@ button, input, select, textarea { font-family: inherit; }
   pointer-events: none;
 }
 .volunteer-hero::after {
-  background: url('assets/eye.png') center / contain no-repeat;
+  background: url('eye.png') center / contain no-repeat;
   border-radius: 0;
 }
 .join-section::before { content: none; }
