@@ -209,15 +209,3 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   items.forEach(item => observer.observe(item));
 }
 
-// A tiny optional hello from the site's floating mascots. Works with keyboard too.
-const whispers = ["You look a little monstrous. We like that.", "No thoughts. Just eyeball.", "Have you met the rest of the monsters?", "Okay, okay! That tickles.", "You're one of us now."];
-let whisperIndex = 0;
-let whisperTimer;
-document.querySelectorAll('.brand-eye').forEach(eye => eye.addEventListener('click', () => {
-  const bubble = document.querySelector('.monster-whisper');
-  if (!bubble) return;
-  bubble.textContent = whispers[whisperIndex++ % whispers.length];
-  bubble.classList.add('popped');
-  clearTimeout(whisperTimer);
-  whisperTimer = setTimeout(() => bubble.classList.remove('popped'), 250);
-}));
